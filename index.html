@@ -10,7 +10,36 @@
             font-family: Arial, Helvetica, sans-serif;
             margin: 50px;
         }
+
+        header .logo {
+            font-size: 1.5ram;
+            font-weight: bold;
+        }
+
+        /*Navigation*/
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
         
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: color 0.3 ease;
+        }
+
+        nav ul li a:hover {
+            color: darkgray;
+        }
+
+        main {
+            padding: 30px;
+        }
+
         h1 {
             color: darkblue;
             text-align: center;    
@@ -61,59 +90,78 @@
     </style>
 </head>
 <body>
-    <!---This is my first webpage-->
-    <h1>Hello, I am Halit</h1>
-    <p>I want to become a Software Engineer at Fontys University.</p>
-    <p>I am preparing for my Software Engineering studies</p>
-    <h2>My Hobbies</h2>
-    <ul>
-        <li>Fitness</li>
-        <li>Coding</li>
-        <li>Music</li>
-    </ul>
-    <h2>My Photo</h2>
-    <img src="myphoto.jpg" alt="Halit's photo" width="200">
-    <a href="https://github.com/alufaust" target="_blank">Visit my GitHub</a>
-    <h2>My Friends</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>City</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Selin</td>
-                <td>22</td>
-                <td>Balikesir</td>
-            </tr>
-            <tr>
-                <td>Alperen</td>
-                <td>22</td>
-                <td>Istanbul</td>
-            </tr>
-            <tr>
-                <td>Uzay</td>
-                <td>21</td>
-                <td>Bursa</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Contact Me</h2>
-    <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
+    <header>
+        <div class="logo">Halit Topal</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>   
+            </ul>
+        </nav>
+    </header>
 
-        <label for="email">E-Mail:</label>
-        <input type="email" id="email" name="email"><br><br>
+    <!--Main Content-->
+    <main>
+        <!---This is my first webpage-->
+        <h1>Hello!</h1>
+        <p>I want to become a Software Engineer at Fontys University.</p>
+        <p>I am preparing for my Software Engineering studies</p>
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Fitness</li>
+            <li>Coding</li>
+            <li>Music</li>
+        </ul>
+        <h2>My Photo</h2>
+        <img src="myphoto.jpg" alt="Halit's photo" width="200">
+        <a href="https://github.com/alufaust" target="_blank">Visit my GitHub</a>
+        <h2>My Friends</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Selin</td>
+                    <td>22</td>
+                    <td>Balikesir</td>
+                </tr>
+                <tr>
+                    <td>Alperen</td>
+                    <td>22</td>
+                    <td>Istanbul</td>
+                </tr>
+                <tr>
+                    <td>Uzay</td>
+                    <td>21</td>
+                    <td>Bursa</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
 
-        <label for="meessage">Massage:</label><br>
-        <textarea id="message" name="message"></textarea><br><br>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email"><br><br>
 
-        <button type="submit">Send</button>
-    </form>
+            <label for="meessage">Massage:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p>© 2025 Halit Topal. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
