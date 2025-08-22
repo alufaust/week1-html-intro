@@ -49,6 +49,23 @@
             color: darkgray;
         }
 
+        #about {
+            background-color: white;
+            border-left: 5px solid #0ea5e9;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        #portfolio {
+            background-color: #f0f8ff;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+        }
+
         main {
             padding: 30px;
         }
@@ -58,6 +75,14 @@
             min-height: 100vh; /* test için büyük alan */
         } 
 
+        #home {
+            background: linear-gradient(to right, #0ea5e9, #22c55e);
+            color: white;
+            border-radius: 10px;
+            padding: 50px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
         h1 {
             color: darkblue;
             text-align: center;    
@@ -65,7 +90,7 @@
 
         p {
             font-size: 18px;
-            color: #333;
+            color: white;
         }
 
         footer {
@@ -78,17 +103,30 @@
 
         img {
             width: 200px;
-            border-radius: 10px;
+            border-radius: 50%;
+            border: 3px solid #0ea5e9;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
         }
 
         table {
             border-collapse: collapse;
             width: 100%;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
         }
 
-        table, th, td {
-            border: 1px solid black;
+        table th {
+            background-color: #0ea5e9;
+            color: white;
+            padding: 12px;
+            text-align: center; 
+        }
+
+        table td {
             padding: 10px;
+            border-bottom: 1px solid #ddd;
             text-align: center;
         }
 
@@ -101,17 +139,27 @@
         }
 
         button, input[type="submit"] {
-            background-color: darkblue;
+            background: linear-gradient(to right, #0ea5e9, #22c55e);
             color: white;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 12px 24px;
+            border-radius: 30px;
             cursor: pointer;
             font-size: 16px;
+            transition: transform 0.2s ease, background 0.3s ease;
         }
 
         button:hover, input[type="submit"]:hover {
-            background-color: navy;
+            transform: scale(1.05s);
+            background: linear-gradient(to right, #22c55e, #0ea5e9);
+        }
+
+        #contact {
+            background-color: #ffffff;
+            border: 2px solid #22c55e;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 20px;
         }
     </style>
 </head>
