@@ -9,10 +9,23 @@
             background-color: #f5f5f5;
             font-family: Arial, Helvetica, sans-serif;
             margin: 50px;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: darkblue;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky; /* Sticky nav */
+            top: 0;
+            z-index: 1000; /* Üstte kalması için */
         }
 
         header .logo {
-            font-size: 1.5ram;
+            font-size: 1.5rem;
             font-weight: bold;
         }
 
@@ -29,7 +42,7 @@
             text-decoration: none;
             color: black;
             font-weight: bold;
-            transition: color 0.3 ease;
+            transition: color 0.3s ease;
         }
 
         nav ul li a:hover {
@@ -40,6 +53,11 @@
             padding: 30px;
         }
 
+        section {
+            padding: 50px 0;
+            min-height: 100vh; /* test için büyük alan */
+        } 
+
         h1 {
             color: darkblue;
             text-align: center;    
@@ -48,6 +66,14 @@
         p {
             font-size: 18px;
             color: #333;
+        }
+
+        footer {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
         }
 
         img {
@@ -84,7 +110,7 @@
             font-size: 16px;
         }
 
-        button:hover, input[type="submmit"]:hover {
+        button:hover, input[type="submit"]:hover {
             background-color: navy;
         }
     </style>
@@ -94,10 +120,10 @@
         <div class="logo">Halit Topal</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>   
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>   
             </ul>
         </nav>
     </header>
@@ -105,18 +131,27 @@
     <!--Main Content-->
     <main>
         <!---This is my first webpage-->
+        <section id="home">
         <h1>Hello!</h1>
         <p>I want to become a Software Engineer at Fontys University.</p>
         <p>I am preparing for my Software Engineering studies</p>
+        </section>
+
+        <section id="about">
         <h2>My Hobbies</h2>
         <ul>
             <li>Fitness</li>
             <li>Coding</li>
             <li>Music</li>
         </ul>
+        </section>
+
+        <section id="portfolio">
         <h2>My Photo</h2>
         <img src="myphoto.jpg" alt="Halit's photo" width="200">
         <a href="https://github.com/alufaust" target="_blank">Visit my GitHub</a>
+        </section>
+
         <h2>My Friends</h2>
         <table>
             <thead>
@@ -144,6 +179,8 @@
                 </tr>
             </tbody>
         </table>
+
+        <section id="contact">
         <h2>Contact Me</h2>
         <form action="#" method="post">
             <label for="name">Name:</label>
@@ -152,11 +189,12 @@
             <label for="email">E-Mail:</label>
             <input type="email" id="email" name="email"><br><br>
 
-            <label for="meessage">Massage:</label><br>
+            <label for="message">Message:</label><br>
             <textarea id="message" name="message"></textarea><br><br>
 
             <button type="submit">Send</button>
         </form>
+        </section>
     </main>
 
     <!--Footer-->
